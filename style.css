@@ -14,13 +14,13 @@
 .card-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 100px;
     gap: 20px;
     flex-wrap: wrap;
 }
 .card {
     width: 250px;
-    height: 300px;
+    height: 400px;
     margin: 0 10px;
     perspective: 1000px;
     cursor: pointer;
@@ -71,6 +71,7 @@
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     border-radius: 10px;
+    text-align: center;
 }
 
 .card-face.back {
@@ -88,11 +89,27 @@
     }
 }
 .careeroverview {
-   font-size: medium;
-   padding-left: 50%;
+   font-size: small;
+   text-align: center;
+   padding-top: 40%;
+   letter-spacing: 2px;
 }
 
 .edurequirement {
-    font-size: medium;
-    padding-left: 50%;
+    font-size: small;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 40%;
+}
+
+.earning-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    padding-top: 40%;
+}
+.earning-list {
+    font-size: 16px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
 }
