@@ -9,6 +9,10 @@
     margin-top: 30px;
     margin-left: 150px;
     margin-right: 150px;
+
+    font-family: "loos-normal", sans-serif;
+font-weight: 700;
+font-style: normal;
 }
 
 .card-container {
@@ -76,6 +80,9 @@
 
 .card-face.back {
     transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 @media (max-width: 768px) {
@@ -88,25 +95,36 @@
         margin: 10px 0;
     }
 }
-.careeroverview {
-   font-size: small;
-   text-align: center;
-   padding-top: 40%;
-   letter-spacing: 2px;
+
+.images-container {
+    margin-bottom: 20px; 
 }
 
-.edurequirement {
+.images-container img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+.careeroverview {
     font-size: small;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 20px; 
+}
+.edurequirement {
+    font-size: medium;
     letter-spacing: 2px;
     text-align: center;
-    padding-top: 40%;
+    margin-top: 20px; 
 }
+
 
 .earning-list {
     list-style-type: none;
     padding: 0;
     text-align: center;
-    padding-top: 40%;
+    padding-top: 10%;
 }
 .earning-list {
     font-size: 16px;
@@ -120,6 +138,79 @@
 }
 
 .card-face.care {
-    background-position: left center;
+    background-position: center;
     background-size: cover;
+}
+
+.card-face.edu {
+    background-position: center;
+    background-size: cover;
+}
+
+.card-face.earn {
+    background-position: center;
+    background-size: cover;
+}
+
+body{
+    height:100vh;
+    margin: 0;
+    --x: calc(var(--posX, 0) * 1px);
+    --y: calc(var(--posY, 0) * 1px);
+    background-image: 
+      linear-gradient(115deg, rgb(211 255 215), rgb(0 0 0)), 
+      radial-gradient( 90% 100% at calc( 50% + var(--x)) calc( 0% + var(--y)), rgb(200 200 200), rgb(022 000 045)), 
+      radial-gradient(100% 100% at calc( 80% - var(--x)) calc( 0% - var(--y)), rgb(250 255 000), rgb(036 000 000)), 
+      radial-gradient(150% 210% at calc(100% + var(--x)) calc( 0% + var(--y)), rgb(020 175 125), rgb(000 010 255)), 
+      radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(255 077 000), rgb(000 200 255)), 
+      linear-gradient(60deg, rgb(255 000 000), rgb(120 086 255));
+    background-blend-mode: overlay, overlay, difference, difference, difference, normal;
+    overflow: hidden;
+  }
+
+  .navbar-toggler {
+    border-color: black;
+    background-color: white;
+  }
+
+
+  .images-container-edu {
+    margin-bottom: 20px; 
+}
+
+.images-container-edu img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+.images-container-earning {
+    margin-bottom: 20px; 
+}
+
+.images-container-earning img {
+    width: 260px;
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+.card:hover {
+    box-shadow: 0 0 10px 5px white; 
+    transition: box-shadow 0.3s ease; 
+}
+
+.disclaimer {
+    font-weight: lighter;
+}
+
+@media (max-width: 768px) {
+    .images-container-edu img {
+        width: 150px;
+    }
+
+}
+
+.font { font-family: "roca", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
